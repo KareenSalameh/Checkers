@@ -7,9 +7,8 @@ Be our guest to download the code, run it and enjoy playing the game with you fr
 
 Don't forget to login with your special Nicknames ;)
 
-![Capture1c](https://github.com/KareenSalameh/Checkers/assets/73133299/e3ff6dd2-acd4-4425-8493-fd107c6ef03e)
+![Capture1c](https://github.com/KareenSalameh/Checkers/assets/73133299/5001be38-d673-4f77-b451-b78024b8a842)
 
-![Capture2](https://github.com/KareenSalameh/Checkers/assets/73133299/644f1ed5-46db-4934-a40e-7f77ddccac82)
+![Capture2](https://github.com/KareenSalameh/Checkers/assets/73133299/b9f473e2-408c-44d9-88fb-9f4318dfd78a)
 
-![Capture3](https://github.com/KareenSalameh/Checkers/assets/73133299/742c7014-72f7-41ae-bcda-fc178bf1828d)
-
+![Capture3](https://github.com/KareenSalameh/Checkers/assets/73133299/d98554b1-6522-4df7-9cb0-0483a20c90cb)
