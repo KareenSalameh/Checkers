@@ -1,7 +1,7 @@
 # Checkers
 Here is our web app of the known checkers game.
 
-We've developed both sides frontend and backend according to the real game and it's rules.
+We've developed both sides frontend and backend according to the real game and it's rules. 
 
 Be our guest to download the code, run it and enjoy playing the game with you friend.
 
