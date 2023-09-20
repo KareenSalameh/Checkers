@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="board.css">
+</head>
+<body>
+  <audio id="eat" src="eat.wav"></audio>
+  <audio id="error" src="error.wav"></audio>
+  <audio id="queen" src="queen.wav"></audio>
+
+  <div id="form" class="d-grid gap-1">
+    <h1 id="title" class="text-warning">Checkers!</h1><br>
+    <span id="p1" class="text-warning">First Player</span>
+    <input id="first_player" type="search" placeholder="Name"><br>
+    <span id="p2" class="text-warning">Second Player</span>
+    <input id="second_player" type="search" placeholder="Name"><br>
+    <button id="start" class="btn btn-danger col-4">start</button>
+  </div> 
+  <div id="wwin" class="alert alert-light" role="cell">
+    
+  </div>
+  <div id="bwin" class="alert alert-secondary" role="cell">
+    
+  </div><br>
+  <div id="starter" class="alert-starter" role="alert">
+    Starts!
+  </div>
+  <div id="white_name" role="cell">
+
+  </div>
+  <div>
+        <div id="main" class="main">
+          <div id="txt"><B><h6>Here are the rules of the game:</b></h6></div>
+          <div id="rule">
+            1- Regular checkers can only move diagonally forward (meaning toward the opposite player’s side) on dark squares.
+            <br>
+            <br>
+            2- A piece making a non-capturing move may move only one square.
+            <br>
+            <br>
+            3- Only one piece may be captured in a single jump, but double jumps are allowed on a single turn.
+            <br>
+            <br>
+            4- If there is an option for double jump, it MUST be taken.
+            <br>
+            <br>
+            5- When a piece reaches the furthest row, it is crowned and becomes a king.
+            <br>
+            <br>
+            6- Kings can move diagonally,and can move both forward and backward in a square.
+            <br>
+            <br>
+            7- If King has done a capture, it wins an extra move(keeps the turn to it's team).
+          
+          </div>
+        </div>
+        <button id="menu" onclick="hide()">Hide/Show Rules</button>
+      </div>
+  <div id="bord"><br>
+      
+      <div id ="game">
+        <button class="wood" id="A1"><span class="circle"></span></button>
+        <button class="red" id="B1"><span class="circle"></span></button>
+        <button class="wood" id="C1"><span class="circle"></span></button>
+        <button class="red" id="D1"><span class="circle"></span></button>
+        <button class="wood" id="E1"><span class="circle"></span></button>
+        <button class="red" id="F1"><span class="circle"></span></button>
+        <button class="wood" id="G1"><span class="circle"></span></button>
+        <button class="red-last" id="H1"><span class="circle"></span></button><br>
+        <button class="red" id="A2"><span class="circle"></span></button>
+        <button class="wood" id="B2"><span class="circle"></span></button>
+        <button class="red" id="C2"><span class="circle"></span></button>
+        <button class="wood" id="D2"><span class="circle"></span></button>
+        <button class="red" id="E2"><span class="circle"></span></button>
+        <button class="wood" id="F2"><span class="circle"></span></button>
+        <button class="red" id="G2"><span class="circle"></span></button>
+        <button class="wood-last" id="H2"><span class="circle"></span></button><br>
+        <button class="wood" id="A3"><span class="circle"></span></button>
+        <button class="red" id="B3"><span class="circle"></span></button>
+        <button class="wood" id="C3"><span class="circle"></span></button>
+        <button class="red" id="D3"><span class="circle"></span></button>
+        <button class="wood" id="E3"><span class="circle"></span></button>
+        <button class="red" id="F3"><span class="circle"></span></button>
+        <button class="wood" id="G3"><span class="circle"></span></button>
+        <button class="red-last" id="H3"><span class="circle"></span></button><br>
+        <button class="red" id="A4"><span class="circle"></span></button>
+        <button class="wood" id="B4"><span class="circle"></span></button>
+        <button class="red" id="C4"><span class="circle"></span></button>
+        <button class="wood" id="D4"><span class="circle"></span></button>
+        <button class="red" id="E4"><span class="circle"></span></button>
+        <button class="wood" id="F4"><span class="circle"></span></button>
+        <button class="red" id="G4"><span class="circle"></span></button>
+        <button class="wood-last" id="H4"><span class="circle"></span></button><br>
+        <button class="wood" id="A5"><span class="circle"></span></button>
+        <button class="red" id="B5"><span class="circle"></span></button>
+        <button class="wood" id="C5"><span class="circle"></span></button>
+        <button class="red" id="D5"><span class="circle"></span></button>
+        <button class="wood" id="E5"><span class="circle"></span></button>
+        <button class="red" id="F5"><span class="circle"></span></button>
+        <button class="wood" id="G5"><span class="circle"></span></button>
+        <button class="red-last" id="H5"><span class="circle"></span></button><br>
+        <button class="red" id="A6"><span class="circle"></span></button>
+        <button class="wood" id="B6"><span class="circle"></span></button>
+        <button class="red" id="C6"><span class="circle"></span></button>
+        <button class="wood" id="D6"><span class="circle"></span></button>
+        <button class="red" id="E6"><span class="circle"></span></button>
+        <button class="wood" id="F6"><span class="circle"></span></button>
+        <button class="red" id="G6"><span class="circle"></span></button>
+        <button class="wood-last" id="H6"><span class="circle"></span></button><br>
+        <button class="wood" id="A7"><span class="circle"></span></button>
+        <button class="red" id="B7"><span class="circle"></span></button>
+        <button class="wood" id="C7"><span class="circle"></span></button>
+        <button class="red" id="D7"><span class="circle"></span></button>
+        <button class="wood" id="E7"><span class="circle"></span></button>
+        <button class="red" id="F7"><span class="circle"></span></button>
+        <button class="wood" id="G7"><span class="circle"></span></button>
+        <button class="red-last" id="H7"><span class="circle"></span></button><br>
+        <button class="red" id="A8"><span class="circle"></span></button>
+        <button class="wood" id="B8"><span class="circle"></span></button>
+        <button class="red" id="C8"><span class="circle"></span></button>
+        <button class="wood" id="D8"><span class="circle"></span></button>
+        <button class="red" id="E8"><span class="circle"></span></button>
+        <button class="wood" id="F8"><span class="circle"></span></button>
+        <button class="red" id="G8"><span class="circle"></span></button>
+        <button class="wood-last" id="H8"><span class="circle"></span></button>
+      </div>  
+        
+    
+    
+  </div><br>
+  <div id="black_name" role="cell">
+      
+  </div></br>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="board.js"> </script>
+</body>
+</html>
